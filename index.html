@@ -252,7 +252,6 @@
             </ul>
         </div>
 
-        <!-- NEW ADDITION: Event Registrations & Custom Forms -->
         <div class="highlight-box" style="border-left-color: #0288D1; background: rgba(2, 136, 209, 0.05);">
             <b style="color: #0277BD;"><i class="fas fa-calendar-alt me-1"></i> C. Event Registrations, Custom Forms & Surveys:</b>
             <p style="margin: 5px 0 0 0; color:#555;">Occasionally, for special temple festivals, spiritual seminars, youth classes, or volunteer programs, we may use in-app custom forms or secure external links (like Google Forms) to manage registrations. If you willingly choose to participate, we may collect:</p>
@@ -265,32 +264,33 @@
 
         <!-- Section 2: Device Permissions Transparency -->
         <h2 class="p-section-title"><i class="fas fa-unlock-alt"></i> 2. Device Permissions Transparency</h2>
-        <p class="p-text">To function correctly, our app requests minimal device permissions. We declare the following for complete transparency:</p>
+        <p class="p-text">To function correctly and efficiently, our app requests minimal device permissions. We declare the following for complete transparency based on Google Play Store listings:</p>
         <ul>
-            <li><b>Internet & Network State:</b> Required to fetch Live Darshan, Kirtan Media, Youtube videos, and dynamic schedules from our servers.</li>
-            <li><b>Location (Map Redirection):</b> Our app features a "Temple Directory" and "Map" navigation. We do <b>NOT</b> track, collect, or store your real-time GPS location in the background. Clicking on Map links safely redirects you to third-party mapping applications (like Google Maps).</li>
-            <li><b>Media & Audio Player:</b> Our app streams Audio/Video (Bhajans, Pravachan). While it controls media playback (Wake Lock to prevent screen sleep during videos), the app <b>NEVER</b> accesses your device microphone or camera. The Japa Mala is a purely touch-based digital counter.</li>
-            <!-- NEW ADDITION: Phone State Permission for Play Store Compliance -->
-            <li><b>Phone State (READ_BASIC_PHONE_STATE):</b> This permission is strictly used by our audio player to detect incoming phone calls. It automatically pauses the Kirtan/Audio playback when you receive a call to avoid audio overlapping. We <b>DO NOT</b> read, collect, or store your call logs, phone numbers, contacts, or device IMEI.</li>
+            <li><b>Network & Internet:</b> (Full network access, view Wi-Fi/network connections, receive data) Required to fetch Live Darshan, Kirtan Media, and dynamic temple schedules from our servers.</li>
+            <li><b>Foreground Service & Prevent Sleeping:</b> Required to prevent your phone from sleeping while you are actively listening to continuous Kirtan or watching Live Darshan.</li>
+            <li><b>Google Play License Check:</b> A standard Android integrity check to ensure the app is securely installed via official channels.</li>
+            <li><b>Read Basic Telephony Status and Identity (Phone State):</b> This permission is strictly used by our audio player to detect incoming phone calls. It automatically pauses the Kirtan/Audio playback when your phone rings to avoid audio overlapping. We <b>DO NOT</b> read, collect, or store your call logs, personal phone numbers, contacts, or device IMEI identity.</li>
+            <li><b>Location (Map Redirection):</b> Our app features a "Temple Directory" and "Map" navigation. We do <b>NOT</b> track or store your real-time GPS location. Clicking on Map links safely redirects you to third-party mapping applications.</li>
         </ul>
 
-        <!-- UPDATED: Section 3 -->
+        <!-- Section 3 -->
         <h2 class="p-section-title"><i class="fas fa-external-link-alt"></i> 3. External Links, E-commerce & Other Apps</h2>
         <p class="p-text">Our app includes buttons and links to our official <b>external E-commerce website</b> where users can purchase physical spiritual items, books, and merchandise. Additionally, we may cross-promote and provide links to download our <b>other official mobile applications</b> and social media channels (YouTube, Facebook, Instagram).</p>
         <p class="p-text">We want to be fully transparent that once you click these links and leave the ISKCON Hadapsar app, your interactions, purchases, and data are governed by the Privacy Policies and Terms of Service of those specific external websites, platforms, or applications.</p>
 
-        <!-- Section 4 -->
-        <h2 class="p-section-title"><i class="fas fa-database"></i> 4. Third-Party Services & Technologies</h2>
-        <p class="p-text">To ensure the app runs smoothly and efficiently globally, we use trusted third-party services. These services may collect device identifiers and usage data according to their own privacy policies:</p>
+        <!-- Section 4 (UPDATED WITH SPECIFIC AD NETWORKS ONLY) -->
+        <h2 class="p-section-title"><i class="fas fa-database"></i> 4. Third-Party Services, Ad Networks & Technologies</h2>
+        <p class="p-text">To ensure the app runs smoothly globally and to support server maintenance costs, we use trusted third-party services and advertising networks. These services may collect device identifiers and usage data according to their own privacy policies:</p>
         <ul>
             <li><b>Google Firebase:</b> Used for app analytics, remote configuration, and real-time database management to ensure the app doesn't crash.</li>
             <li><b>Blogger API & YouTube:</b> Used to fetch high-quality images, gallery content, and live video darshan directly to your screen.</li>
-            <li><b>Advertising (Google AdMob):</b> We may show non-intrusive ads to support the app's server and maintenance costs. Advertising networks may use Advertising IDs (AAID) to serve relevant ads. You can manage personalized ad settings from your phone's Google settings.</li>
+            <li><b>Advertising Networks (AdMob, Unity & Start.io):</b> To support our application development, we display advertisements. We have integrated trusted ad networks including <b>Google AdMob, Unity Ads, and Start.io (StartApp)</b>. These third-party ad networks may collect and use your device's <b>Advertising ID</b>, IP address, and app interaction data to serve non-personalized or personalized ads based on your preferences.</li>
+            <li><b>AdId & AdServices (Privacy Sandbox):</b> As reflected in our app permissions, we utilize the <b>Advertising ID permission, AdServices Topics API, AdServices Attribution APIs, and Play Install Referrer API</b>. These modern Android Privacy Sandbox technologies allow ad networks to measure performance and serve relevant ads securely without tracking sensitive personal identifiable information (PII). You can manage or reset your personalized ad settings directly from your phone's Android Google settings.</li>
         </ul>
 
         <!-- Section 5 -->
         <h2 class="p-section-title"><i class="fas fa-bell"></i> 5. Push Notifications</h2>
-        <p class="p-text">We use Firebase Cloud Messaging to send you important spiritual updates, such as Ekadashi reminders, festival alerts, and Live Darshan timings. You can enable or disable these notifications at any time through your device settings.</p>
+        <p class="p-text">We use Firebase Cloud Messaging to show notifications and send you important spiritual updates, such as Ekadashi reminders, festival alerts, and Live Darshan timings. You can enable or disable these notifications at any time through your device settings.</p>
 
         <!-- Section 6 -->
         <h2 class="p-section-title"><i class="fas fa-gamepad"></i> 6. Spiritual Stories, Games & Quizzes (For All Users)</h2>
